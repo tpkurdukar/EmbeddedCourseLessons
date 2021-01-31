@@ -1,0 +1,557 @@
+
+**** Build of configuration Debug for project lesson ****
+
+"C:\\ti\\ccs1011\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: GNU Compiler
+"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc-7.2.1.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"C:/Users/prair/Documents/embeddedlessons/lesson19" -I"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"main.d" -MT"main.o"   -o"main.o" "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../tm4c123gh6pm_startup_ccs_gcc.c"
+Invoking: GNU Compiler
+"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc-7.2.1.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"C:/Users/prair/Documents/embeddedlessons/lesson19" -I"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"tm4c123gh6pm_startup_ccs_gcc.d" -MT"tm4c123gh6pm_startup_ccs_gcc.o"   -o"tm4c123gh6pm_startup_ccs_gcc.o" "../tm4c123gh6pm_startup_ccs_gcc.c"
+Finished building: "../tm4c123gh6pm_startup_ccs_gcc.c"
+ 
+Building target: "lesson.out"
+Invoking: GNU Linker
+"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc-7.2.1.exe" -DPART_TM4C123GH6PM -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -Wl,-Map,"lesson.map" -o"lesson.out" "./main.o" "./tm4c123gh6pm_startup_ccs_gcc.o" -Wl,-T"../tm4c123gh6pm.lds"  
+Finished building target: "lesson.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lesson ****
+
+"C:\\ti\\ccs1011\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../bsp.c"
+Invoking: GNU Compiler
+"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc-7.2.1.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"C:/Users/prair/Documents/embeddedlessons/lesson19" -I"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"bsp.d" -MT"bsp.o"   -o"bsp.o" "../bsp.c"
+subdir_rules.mk:9: recipe for target 'bsp.o' failed
+In file included from ../bsp.c:2:0:
+../TM4C123GH6PM.h:316:10: fatal error: core_cm4.h: No such file or directory
+ #include "core_cm4.h"                               /*!< Cortex-M4 processor and core peripherals                              */
+          ^~~~~~~~~~~~
+compilation terminated.
+gmake: *** [bsp.o] Error 1
+Building file: "../main.c"
+Invoking: GNU Compiler
+"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc-7.2.1.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"C:/Users/prair/Documents/embeddedlessons/lesson19" -I"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"main.d" -MT"main.o"   -o"main.o" "../main.c"
+subdir_rules.mk:9: recipe for target 'main.o' failed
+In file included from ../main.c:1:0:
+../TM4C123GH6PM.h:316:10: fatal error: core_cm4.h: No such file or directory
+ #include "core_cm4.h"                               /*!< Cortex-M4 processor and core peripherals                              */
+          ^~~~~~~~~~~~
+compilation terminated.
+gmake: *** [main.o] Error 1
+Building file: "../startup_tm4c.c"
+Invoking: GNU Compiler
+"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc-7.2.1.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"C:/Users/prair/Documents/embeddedlessons/lesson19" -I"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"startup_tm4c.d" -MT"startup_tm4c.o"   -o"startup_tm4c.o" "../startup_tm4c.c"
+subdir_rules.mk:9: recipe for target 'startup_tm4c.o' failed
+In file included from ../startup_tm4c.c:2:0:
+../TM4C123GH6PM.h:316:10: fatal error: core_cm4.h: No such file or directory
+ #include "core_cm4.h"                               /*!< Cortex-M4 processor and core peripherals                              */
+          ^~~~~~~~~~~~
+compilation terminated.
+gmake: *** [startup_tm4c.o] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lesson ****
+
+"C:\\ti\\ccs1011\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../bsp.c"
+Invoking: GNU Compiler
+"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc-7.2.1.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"C:/Users/prair/Documents/embeddedlessons/lesson19" -I"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -I"C:/Users/prair/Documents/embeddedlessons/CMSIS/Include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"bsp.d" -MT"bsp.o"   -o"bsp.o" "../bsp.c"
+subdir_rules.mk:9: recipe for target 'bsp.o' failed
+../bsp.c:5:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+ __stackless void assert_failed (char const *file, int line) {
+             ^~~~
+gmake: *** [bsp.o] Error 1
+Building file: "../main.c"
+Invoking: GNU Compiler
+"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc-7.2.1.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"C:/Users/prair/Documents/embeddedlessons/lesson19" -I"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -I"C:/Users/prair/Documents/embeddedlessons/CMSIS/Include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"main.d" -MT"main.o"   -o"main.o" "../main.c"
+subdir_rules.mk:9: recipe for target 'main.o' failed
+../main.c:3:10: fatal error: intrinsics.h: No such file or directory
+ #include <intrinsics.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+gmake: *** [main.o] Error 1
+Building file: "../startup_tm4c.c"
+Invoking: GNU Compiler
+"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc-7.2.1.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"C:/Users/prair/Documents/embeddedlessons/lesson19" -I"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -I"C:/Users/prair/Documents/embeddedlessons/CMSIS/Include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"startup_tm4c.d" -MT"startup_tm4c.o"   -o"startup_tm4c.o" "../startup_tm4c.c"
+subdir_rules.mk:9: recipe for target 'startup_tm4c.o' failed
+../startup_tm4c.c:9:28: error: stray '@' in program
+ int const __vector_table[] @ ".intvec" = {
+                            ^
+../startup_tm4c.c:9:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before string constant
+ int const __vector_table[] @ ".intvec" = {
+                              ^~~~~~~~~
+../startup_tm4c.c:170:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+ __stackless void HardFault_Handler(void) {
+             ^~~~
+../startup_tm4c.c:174:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+ __stackless void NMI_Handler(void) {
+             ^~~~
+../startup_tm4c.c:178:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+ __stackless void MemManage_Handler(void) {
+             ^~~~
+../startup_tm4c.c:182:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+ __stackless void BusFault_Handler(void) {
+             ^~~~
+../startup_tm4c.c:186:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+ __stackless void UsageFault_Handler(void) {
+             ^~~~
+../startup_tm4c.c:190:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+ __stackless void Unused_Handler(void) {
+             ^~~~
+In file included from ../startup_tm4c.c:2:0:
+../TM4C123GH6PM.h:170:6: error: 'SVC_Handler' aliased to undefined symbol 'Unused_Handler'
+ void SVC_Handler(void);
+      ^~~~~~~~~~~
+../TM4C123GH6PM.h:287:6: error: 'PWM1Fault_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void PWM1Fault_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:286:6: error: 'PWM1Gen3_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void PWM1Gen3_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:285:6: error: 'PWM1Gen2_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void PWM1Gen2_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:284:6: error: 'PWM1Gen1_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void PWM1Gen1_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:283:6: error: 'PWM1Gen0_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void PWM1Gen0_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:282:6: error: 'GPIOPortS_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortS_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:281:6: error: 'GPIOPortR_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortR_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:280:6: error: 'GPIOPortQ7_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortQ7_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:279:6: error: 'GPIOPortQ6_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortQ6_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:278:6: error: 'GPIOPortQ5_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortQ5_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:277:6: error: 'GPIOPortQ4_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortQ4_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:276:6: error: 'GPIOPortQ3_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortQ3_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:275:6: error: 'GPIOPortQ2_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortQ2_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:274:6: error: 'GPIOPortQ1_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortQ1_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:273:6: error: 'GPIOPortQ0_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortQ0_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:272:6: error: 'GPIOPortP7_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortP7_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:271:6: error: 'GPIOPortP6_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortP6_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:270:6: error: 'GPIOPortP5_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortP5_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:269:6: error: 'GPIOPortP4_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortP4_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:268:6: error: 'GPIOPortP3_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortP3_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:267:6: error: 'GPIOPortP2_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortP2_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:266:6: error: 'GPIOPortP1_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortP1_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:265:6: error: 'GPIOPortP0_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortP0_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:264:6: error: 'Fan0_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void Fan0_IRQHandler(void);
+      ^~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:263:6: error: 'QEI2_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void QEI2_IRQHandler(void);
+      ^~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:262:6: error: 'GPIOPortN_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortN_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:261:6: error: 'GPIOPortM_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortM_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:260:6: error: 'I2C5_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void I2C5_IRQHandler(void);
+      ^~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:259:6: error: 'I2C4_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void I2C4_IRQHandler(void);
+      ^~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:258:6: error: 'LPC0_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void LPC0_IRQHandler(void);
+      ^~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:257:6: error: 'PECI0_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void PECI0_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:256:6: error: 'FPU_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void FPU_IRQHandler(void);
+      ^~~~~~~~~~~~~~
+../TM4C123GH6PM.h:255:6: error: 'WideTimer5B_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void WideTimer5B_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:254:6: error: 'WideTimer5A_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void WideTimer5A_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:253:6: error: 'WideTimer4B_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void WideTimer4B_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:252:6: error: 'WideTimer4A_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void WideTimer4A_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:251:6: error: 'WideTimer3B_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void WideTimer3B_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:250:6: error: 'WideTimer3A_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void WideTimer3A_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:249:6: error: 'WideTimer2B_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void WideTimer2B_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:248:6: error: 'WideTimer2A_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void WideTimer2A_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:247:6: error: 'WideTimer1B_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void WideTimer1B_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:246:6: error: 'WideTimer1A_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void WideTimer1A_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:245:6: error: 'WideTimer0B_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void WideTimer0B_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:244:6: error: 'WideTimer0A_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void WideTimer0A_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:243:6: error: 'Timer5B_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void Timer5B_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:242:6: error: 'Timer5A_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void Timer5A_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:241:6: error: 'Timer4B_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void Timer4B_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:240:6: error: 'Timer4A_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void Timer4A_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:239:6: error: 'I2C3_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void I2C3_IRQHandler(void);
+      ^~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:238:6: error: 'I2C2_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void I2C2_IRQHandler(void);
+      ^~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:237:6: error: 'UART7_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void UART7_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:236:6: error: 'UART6_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void UART6_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:235:6: error: 'UART5_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void UART5_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:234:6: error: 'UART4_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void UART4_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:233:6: error: 'UART3_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void UART3_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:232:6: error: 'SSI3_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void SSI3_IRQHandler(void);
+      ^~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:231:6: error: 'SSI2_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void SSI2_IRQHandler(void);
+      ^~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:230:6: error: 'GPIOPortL_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortL_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:229:6: error: 'GPIOPortK_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortK_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:228:6: error: 'GPIOPortJ_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortJ_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:227:6: error: 'EBI0_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void EBI0_IRQHandler(void);
+      ^~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:226:6: error: 'I2S0_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void I2S0_IRQHandler(void);
+      ^~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:225:6: error: 'ADC1Seq3_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void ADC1Seq3_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:224:6: error: 'ADC1Seq2_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void ADC1Seq2_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:223:6: error: 'ADC1Seq1_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void ADC1Seq1_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:222:6: error: 'ADC1Seq0_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void ADC1Seq0_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:221:6: error: 'uDMAError_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void uDMAError_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:220:6: error: 'uDMAST_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void uDMAST_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:219:6: error: 'PWMGen3_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void PWMGen3_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:218:6: error: 'USB0_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void USB0_IRQHandler(void);
+      ^~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:217:6: error: 'Hibernate_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void Hibernate_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:216:6: error: 'CAN2_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void CAN2_IRQHandler(void);
+      ^~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:215:6: error: 'CAN1_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void CAN1_IRQHandler(void);
+      ^~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:214:6: error: 'CAN0_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void CAN0_IRQHandler(void);
+      ^~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:213:6: error: 'QEI1_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void QEI1_IRQHandler(void);
+      ^~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:212:6: error: 'I2C1_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void I2C1_IRQHandler(void);
+      ^~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:211:6: error: 'Timer3B_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void Timer3B_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:210:6: error: 'Timer3A_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void Timer3A_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:209:6: error: 'SSI1_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void SSI1_IRQHandler(void);
+      ^~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:208:6: error: 'UART2_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void UART2_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:207:6: error: 'GPIOPortH_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortH_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:206:6: error: 'GPIOPortG_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortG_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:205:6: error: 'GPIOPortF_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortF_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:204:6: error: 'FlashCtrl_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void FlashCtrl_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:203:6: error: 'SysCtrl_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void SysCtrl_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:202:6: error: 'Comp2_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void Comp2_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:201:6: error: 'Comp1_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void Comp1_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:200:6: error: 'Comp0_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void Comp0_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:199:6: error: 'Timer2B_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void Timer2B_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:198:6: error: 'Timer2A_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void Timer2A_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:197:6: error: 'Timer1B_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void Timer1B_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:196:6: error: 'Timer1A_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void Timer1A_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:195:6: error: 'Timer0B_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void Timer0B_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:194:6: error: 'Timer0A_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void Timer0A_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:193:6: error: 'Watchdog_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void Watchdog_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:192:6: error: 'ADCSeq3_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void ADCSeq3_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:191:6: error: 'ADCSeq2_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void ADCSeq2_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:190:6: error: 'ADCSeq1_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void ADCSeq1_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:189:6: error: 'ADCSeq0_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void ADCSeq0_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:188:6: error: 'QEI0_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void QEI0_IRQHandler(void);
+      ^~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:187:6: error: 'PWMGen2_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void PWMGen2_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:186:6: error: 'PWMGen1_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void PWMGen1_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:185:6: error: 'PWMGen0_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void PWMGen0_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:184:6: error: 'PWMFault_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void PWMFault_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:183:6: error: 'I2C0_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void I2C0_IRQHandler(void);
+      ^~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:182:6: error: 'SSI0_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void SSI0_IRQHandler(void);
+      ^~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:181:6: error: 'UART1_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void UART1_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:180:6: error: 'UART0_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void UART0_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:179:6: error: 'GPIOPortE_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortE_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:178:6: error: 'GPIOPortD_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortD_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:177:6: error: 'GPIOPortC_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortC_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:176:6: error: 'GPIOPortB_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortB_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:175:6: error: 'GPIOPortA_IRQHandler' aliased to undefined symbol 'Unused_Handler'
+ void GPIOPortA_IRQHandler(void);
+      ^~~~~~~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:173:6: error: 'SysTick_Handler' aliased to undefined symbol 'Unused_Handler'
+ void SysTick_Handler(void);
+      ^~~~~~~~~~~~~~~
+../TM4C123GH6PM.h:172:6: error: 'PendSV_Handler' aliased to undefined symbol 'Unused_Handler'
+ void PendSV_Handler(void);
+      ^~~~~~~~~~~~~~
+../TM4C123GH6PM.h:171:6: error: 'DebugMon_Handler' aliased to undefined symbol 'Unused_Handler'
+ void DebugMon_Handler(void);
+      ^~~~~~~~~~~~~~~~
+gmake: *** [startup_tm4c.o] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lesson ****
+
+"C:\\ti\\ccs1011\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: GNU Compiler
+"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc-7.2.1.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"C:/Users/prair/Documents/embeddedlessons/lesson19" -I"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -I"C:/Users/prair/Documents/embeddedlessons/CMSIS/Include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"main.d" -MT"main.o"   -o"main.o" "../main.c"
+subdir_rules.mk:9: recipe for target 'main.o' failed
+../main.c:3:10: fatal error: intrinsics.h: No such file or directory
+ #include <intrinsics.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+gmake: *** [main.o] Error 1
+Building file: "../bsp.c"
+Invoking: GNU Compiler
+"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc-7.2.1.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"C:/Users/prair/Documents/embeddedlessons/lesson19" -I"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -I"C:/Users/prair/Documents/embeddedlessons/CMSIS/Include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"bsp.d" -MT"bsp.o"   -o"bsp.o" "../bsp.c"
+Finished building: "../bsp.c"
+ 
+Building file: "../startup_tm4c_gnu.c"
+Invoking: GNU Compiler
+"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc-7.2.1.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"C:/Users/prair/Documents/embeddedlessons/lesson19" -I"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -I"C:/Users/prair/Documents/embeddedlessons/CMSIS/Include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"startup_tm4c_gnu.d" -MT"startup_tm4c_gnu.o"   -o"startup_tm4c_gnu.o" "../startup_tm4c_gnu.c"
+Finished building: "../startup_tm4c_gnu.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lesson ****
+
+"C:\\ti\\ccs1011\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: GNU Compiler
+"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc-7.2.1.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"C:/Users/prair/Documents/embeddedlessons/lesson19" -I"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -I"C:/Users/prair/Documents/embeddedlessons/CMSIS/Include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"main.d" -MT"main.o"   -o"main.o" "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "lesson.out"
+Invoking: GNU Linker
+"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc-7.2.1.exe" -DPART_TM4C123GH6PM -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -Wl,-Map,"lesson.map" -o"lesson.out" "./bsp.o" "./main.o" "./startup_tm4c_gnu.o" -Wl,-T"../tm4c123gh6pm.lds"  
+Finished building target: "lesson.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lesson ****
+
+"C:\\ti\\ccs1011\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'lesson.out' is up to date.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project lesson ****
+
+"C:\\ti\\ccs1011\\ccs\\utils\\bin\\gmake" -k -j 8 clean -O 
+ 
+DEL /F  "lesson.hex"  "lesson.out" 
+DEL /F "bsp.o" "main.o" "startup_tm4c_gnu.o" 
+DEL /F "bsp.d" "main.d" "startup_tm4c_gnu.d" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lesson ****
+
+"C:\\ti\\ccs1011\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../bsp.c"
+Invoking: GNU Compiler
+"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc-7.2.1.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"C:/Users/prair/Documents/embeddedlessons/lesson20" -I"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -I"C:/Users/prair/Documents/embeddedlessons/CMSIS/Include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"bsp.d" -MT"bsp.o"   -o"bsp.o" "../bsp.c"
+Finished building: "../bsp.c"
+ 
+Building file: "../main.c"
+Invoking: GNU Compiler
+"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc-7.2.1.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"C:/Users/prair/Documents/embeddedlessons/lesson20" -I"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -I"C:/Users/prair/Documents/embeddedlessons/CMSIS/Include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"main.d" -MT"main.o"   -o"main.o" "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../startup_tm4c_gnu.c"
+Invoking: GNU Compiler
+"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc-7.2.1.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"C:/Users/prair/Documents/embeddedlessons/lesson20" -I"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -I"C:/Users/prair/Documents/embeddedlessons/CMSIS/Include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"startup_tm4c_gnu.d" -MT"startup_tm4c_gnu.o"   -o"startup_tm4c_gnu.o" "../startup_tm4c_gnu.c"
+Finished building: "../startup_tm4c_gnu.c"
+ 
+Building target: "lesson.out"
+Invoking: GNU Linker
+"C:/ti/ccs1011/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc-7.2.1.exe" -DPART_TM4C123GH6PM -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -Wl,-Map,"lesson.map" -o"lesson.out" "./bsp.o" "./main.o" "./startup_tm4c_gnu.o" -Wl,-T"../tm4c123gh6pm.lds"  
+Finished building target: "lesson.out"
+ 
+
+**** Build Finished ****

@@ -1,0 +1,188 @@
+###############################################################################
+#
+# IAR ELF Linker V8.50.9.278/W32 for ARM                  06/Jan/2021  16:59:36
+# Copyright 2007-2020 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\prair\Documents\embeddedlessons\lesson10\Debug\Exe\project.out
+#    Map file     =
+#        C:\Users\prair\Documents\embeddedlessons\lesson10\Debug\List\project.map
+#    Command line =
+#        -f C:\Users\prair\AppData\Local\Temp\EW2394.tmp
+#        (C:\Users\prair\Documents\embeddedlessons\lesson10\Debug\Obj\delay.o
+#        C:\Users\prair\Documents\embeddedlessons\lesson10\Debug\Obj\main.o
+#        --no_out_extension -o
+#        C:\Users\prair\Documents\embeddedlessons\lesson10\Debug\Exe\project.out
+#        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
+#        --map
+#        C:\Users\prair\Documents\embeddedlessons\lesson10\Debug\List\project.map
+#        --config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.4\arm\config\linker\TexasInstruments\LM4F120H5QR.icf" --semihosting
+#        --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x0 { ro section .intvec };
+"P1":  place in [from 0x0 to 0x3'ffff] { ro };
+define block CSTACK with size = 2K, alignment = 8 { };
+define block HEAP with size = 8K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'7fff] {
+          rw, block CSTACK, block HEAP };
+
+  Section          Kind         Address   Size  Object
+  -------          ----         -------   ----  ------
+"A0":                                     0x40
+  .intvec          ro code          0x0   0x40  vector_table_M.o [3]
+                                 - 0x40   0x40
+
+"P1":                                    0x188
+  .text            ro code         0x40   0x98  main.o [1]
+  .text            ro code         0xd8   0x18  delay.o [1]
+  .text            ro code         0xf0   0x3a  zero_init3.o [3]
+  .text            ro code        0x12a    0x2  vector_table_M.o [3]
+  .text            ro code        0x12c   0x28  data_init.o [3]
+  .iar.init_table  const          0x154   0x10  - Linker created -
+  .text            ro code        0x164   0x1e  cmain.o [3]
+  .text            ro code        0x182    0x4  low_level_init.o [2]
+  .text            ro code        0x186    0x4  exit.o [2]
+  .text            ro code        0x18c    0xa  cexit.o [3]
+  .text            ro code        0x198   0x14  exit.o [4]
+  .text            ro code        0x1ac   0x1c  cstartup_M.o [3]
+  .rodata          const          0x1c8    0x0  zero_init3.o [3]
+                                - 0x1c8  0x188
+
+"P2", part 1 of 2:                         0x8
+  .bss             zero     0x2000'0000    0x8  main.o [1]
+                          - 0x2000'0008    0x8
+
+"P2", part 2 of 2:                       0x800
+  CSTACK                    0x2000'0008  0x800  <Block>
+    CSTACK         uninit   0x2000'0008  0x800  <Block tail>
+                          - 0x2000'0808  0x800
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+        0x1c8     0x3'ffff  0x3'fe38
+  0x2000'0808  0x2000'7fff    0x77f8
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x8:
+          0x2000'0000   0x8
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  ro data  rw data
+    ------            -------  -------  -------
+command line/config:
+    -------------------------------------------
+    Total:
+
+C:\Users\prair\Documents\embeddedlessons\lesson10\Debug\Obj: [1]
+    delay.o                24
+    main.o                152                 8
+    -------------------------------------------
+    Total:                176                 8
+
+dl7M_tln.a: [2]
+    exit.o                  4
+    low_level_init.o        4
+    -------------------------------------------
+    Total:                  8
+
+rt7M_tl.a: [3]
+    cexit.o                10
+    cmain.o                30
+    cstartup_M.o           28
+    data_init.o            40
+    vector_table_M.o       66
+    zero_init3.o           58
+    -------------------------------------------
+    Total:                232
+
+shb_l.a: [4]
+    exit.o                 20
+    -------------------------------------------
+    Total:                 20
+
+    Gaps                    4
+    Linker created                  16    2'048
+-----------------------------------------------
+    Grand Total:          440       16    2'056
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address  Size  Type      Object
+-----                       -------  ----  ----      ------
+.iar.init_table$$Base         0x154         --   Gb  - Linker created -
+.iar.init_table$$Limit        0x164         --   Gb  - Linker created -
+?main                         0x165        Code  Gb  cmain.o [3]
+CSTACK$$Base            0x2000'0008         --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'0808         --   Gb  - Linker created -
+Region$$Table$$Base           0x154         --   Gb  - Linker created -
+Region$$Table$$Limit          0x164         --   Gb  - Linker created -
+__cmain                       0x165        Code  Gb  cmain.o [3]
+__exit                        0x199  0x14  Code  Gb  exit.o [4]
+__iar_data_init3              0x12d  0x28  Code  Gb  data_init.o [3]
+__iar_program_start           0x1ad        Code  Gb  cstartup_M.o [3]
+__iar_zero_init3               0xf1  0x3a  Code  Gb  zero_init3.o [3]
+__low_level_init              0x183   0x4  Code  Gb  low_level_init.o [2]
+__vector_table                  0x0        Data  Gb  vector_table_M.o [3]
+_call_main                    0x171        Code  Gb  cmain.o [3]
+_exit                         0x18d        Code  Gb  cexit.o [3]
+_main                         0x17b        Code  Gb  cmain.o [3]
+delay                          0xd9  0x18  Code  Gb  delay.o [1]
+exit                          0x187   0x4  Code  Gb  exit.o [2]
+main                           0x57  0x60  Code  Gb  main.o [1]
+swap                           0x41  0x16  Code  Gb  main.o [1]
+swap::tmp               0x2000'0000   0x8  Data  Lc  main.o [1]
+
+
+[1] = C:\Users\prair\Documents\embeddedlessons\lesson10\Debug\Obj
+[2] = dl7M_tln.a
+[3] = rt7M_tl.a
+[4] = shb_l.a
+
+    440 bytes of readonly  code memory
+     16 bytes of readonly  data memory
+  2'056 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,11 @@
+.\dbg\main.o: main.c
+.\dbg\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\dbg\main.o: miros.h
+.\dbg\main.o: bsp.h
+.\dbg\main.o: ..\qpc\3rd_party\ek-tm4c123gxl\TM4C123GH6PM.h
+.\dbg\main.o: ..\qpc\3rd_party\CMSIS\Include\core_cm4.h
+.\dbg\main.o: ..\qpc\3rd_party\CMSIS\Include\cmsis_version.h
+.\dbg\main.o: ..\qpc\3rd_party\CMSIS\Include\cmsis_compiler.h
+.\dbg\main.o: ..\qpc\3rd_party\CMSIS\Include\cmsis_armcc.h
+.\dbg\main.o: ..\qpc\3rd_party\CMSIS\Include\mpu_armv7.h
+.\dbg\main.o: ..\qpc\3rd_party\ek-tm4c123gxl\system_TM4C123GH6PM.h

@@ -1,0 +1,44 @@
+[
+  {
+    "ID": "c:@counter",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "counter",
+    "location": {
+      "column": "5",
+      "line": "2",
+      "path": "C:\\Users\\prair\\Documents\\embeddedlessons\\lesson3\\main.c"
+    },
+    "name": "counter",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@main",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int main(void)",
+    "location": {
+      "column": "5",
+      "line": "4",
+      "path": "C:\\Users\\prair\\Documents\\embeddedlessons\\lesson3\\main.c"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@56@F@main@ptr",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "ptr",
+    "location": {
+      "column": "8",
+      "line": "6",
+      "path": "C:\\Users\\prair\\Documents\\embeddedlessons\\lesson3\\main.c"
+    },
+    "name": "ptr",
+    "origin": "project_file",
+    "scope": null
+  }
+]
